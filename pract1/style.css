@@ -125,7 +125,7 @@ header>img {
 
 .title {
 font-size: 48px;     /* великий розмір тексту */
-    font-weight: bold;   /* жирний текст */
+   /* font-weight: bold;   /* жирний текст */
     margin-bottom: 20px;
     margin-left: 20px;
 }
