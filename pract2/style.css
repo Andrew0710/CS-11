@@ -473,15 +473,15 @@ h1{
 } 
 .container_4 span:last-child {
     border-bottom: 3px solid rgb(158, 158, 158);
-    
 }
 
-
-.container_4 span:hover {
+.container_4 span:last-child:hover {
+    color: rgb(186, 189, 192);
     cursor: pointer;
-    border-bottom-color: ц#fa0000
-
+    border-bottom: 2px solid rgb(255, 0, 0);
 }
+
+
 .container_5{
     width: 100%;
     height: 1500px;
@@ -493,13 +493,13 @@ h1{
     align-items: center;
 }
 .first_back{
-    height: 400px;
+    height: 410px;
     width: 100%;
     background-color: #293331;
     display: flex;
     align-items: top;
     justify-content: center;
-    margin-top: o px;
+   
 }
 .text4{
     text-align: center;
@@ -511,6 +511,16 @@ h1{
 .description5{
     font-size: 1.5rem;
 }
+.container_5 span {
+    border-bottom: 3px solid rgb(158, 158, 158);
+}
+
+.container_5 span:hover {
+    /* color: rgb(186, 189, 192); */
+    cursor: pointer;
+    border-bottom: 2px solid rgb(179, 134, 134);
+}
+
 .second_back{
     height: 1100px;
     width: 100%;
@@ -531,7 +541,7 @@ background-color: linear-gradient(0deg, rgba(41, 51, 49, 1) 0%, rgba(255, 255, 2
    
 }
 
-.item_1, .item_2, .item_3, .item_4, .item_5, .item_6,.item_7, .item_8 {
+.grid2>div {
     width: 350px;
     height: 450px;
     background-size: cover;       /* фотка піджимається і обрізається по блоку */
@@ -635,6 +645,9 @@ url('https://assets.nicepagecdn.com/d2cc3eaa/6411963/images/group-three-young-go
  
         url('https://assets.nicepagecdn.com/d2cc3eaa/6411963/images/smiley-boy-using-laptop-headphon.jpg');
 } 
+.grid2>button:last-child{
+
+}
 
 .button-learn-more5{
     width: 150px;
@@ -644,5 +657,22 @@ url('https://assets.nicepagecdn.com/d2cc3eaa/6411963/images/group-three-young-go
     color: rgb(255, 255, 255);
     border-radius: 10px;
     cursor: pointer;
+
+}
+.container_5>button:last-child{
+    width: 220px;
+    height: 70px;
+    background-color: rgb(253, 253, 253);
+    padding: 10px 5px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: -150px;
+}
+.container_5>button:last-child:hover{
+    color:white;
+    background-color: black;
 
 }
