@@ -488,8 +488,9 @@ h1{
     background-image:
     linear-gradient(
       to top, 
-      rgba(0, 0, 0, 0.6) 40%,   /* низ затемнений до 40% */
-      rgba(0, 0, 0, 0) 40%      /* далі прозорий */
+      rgba(0, 0, 0, 0.6) 40%,   
+      rgba(0, 0, 0, 0) 40%      
+      
     ),
         url('img/img6.jpg');
 } 
