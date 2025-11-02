@@ -1,0 +1,313 @@
+.container {
+    width: 100%;
+    height: 800px;
+    padding: 40px 20px 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 226, 226);
+}
+
+.grid {
+    width: 80%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50% 20% 30%;
+    gap: 10px;
+    /* repeat(3, 250px); */
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.grid .i1, .i3, .i6, .i7, .i8{
+    border-radius: 20px;
+}
+.i1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 20px;
+
+}
+.i1 p{
+    color: rgb(143, 140, 140);
+}
+.i1 > .right,
+.i1 > .left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.phone{
+    
+    overflow: hidden;
+}
+.right {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+.right img{
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+    /* transform: translateY(30%); */
+}
+.chat {
+    position: absolute;
+     top: 25%;
+    left: 10%;
+    
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+   
+  }
+  
+ 
+  .bubble {
+    width: 98%;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 500;
+    box-sizing: border-box;
+    font-family: "Inter", "Inter Placeholder", sans-serif;
+    
+  }
+  
+
+  .bubble.black1 {
+    background-color: #000;
+    color: #fff;
+    align-self: flex-start;
+    transform: rotate(-2deg) translateX(-40%);
+    
+  }
+  
+  .bubble.white1 {
+    background-color: #f4f4f4;
+    color: #000;
+    align-self: flex-end;
+    transform: rotate(2deg) translateX(25%);
+  }
+  .bubble.black2 {
+    background-color: #000000;
+    color: #ffffff;
+    align-self: flex-end;
+    transform: rotate(2deg) translateX(-40%);
+  }
+  .bubble.white2 {
+    background-color: #f4f4f4;
+    color: #000;
+    align-self: flex-end;
+    transform: rotate(-2deg) translateX(25%);
+  }
+
+.i3 {
+    background-image: url("./images/clouds-bg.avif");
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+    gap: 7%;
+    padding: 10px 20px;
+    font-family: "Inter", "Inter Placeholder", sans-serif;
+    
+}
+.i3 h1{
+    font-size: 70px;
+    font-weight: 500;
+}
+.text1 h3{
+    font-size: 28px;
+}
+.i3 p{
+    color: rgba(253, 253, 253, 0.6);
+    font-size: 13px;
+}
+.text1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.i6 {
+    background-color: white;
+    grid-column: 3 / 3;
+    grid-row: 2 / -1;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+}
+.i6 img{
+    width: 100%;
+    height: 120%;
+}
+
+.i7 {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    grid-column: 1 / 2;
+    grid-row: 3 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    font-family: "Inter", "Inter Placeholder", sans-serif;
+}
+.i7 p{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+}
+.i7 h2{
+    
+    margin: 0%;
+    font-size: 70px;
+}
+
+.i8 {
+    background-color: white;
+    grid-column: 2 / 2;
+    grid-row: 3 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 5px 15px 15px;
+    font-family: "Inter", "Inter Placeholder", sans-serif;;
+    
+}
+.i8 h3{
+    font-size: 28px;
+    margin: 0px;
+    font-weight: 500;
+}
+.i8 p{
+    font-size: 16px;
+    color: rgba(90, 90, 90, 0.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .left_box{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+.top_box{
+    display: flex;
+    align-items: end;
+
+
+}
+
+.right_top_child{
+    width: 100%;
+    height: 100%;
+    
+}
+.right_top_child img{
+    width: 100%;
+    height: 100%;
+}
+
+.bottom_box{
+    display: flex;
+    width: 70%;
+    height: 40%;
+}
+.left_bottom_child{
+
+}
+.right_bottom_child{
+
+}
+
+.right_box{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+}
+
+
+
+
+.top_item{
+    background-image: url("./images/clouds-bg.avif");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: ;
+} */
