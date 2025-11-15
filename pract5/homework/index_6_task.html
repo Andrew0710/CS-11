@@ -1,0 +1,59 @@
+<html>
+
+<head>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js"></script>
+
+</head>
+    
+<body>
+        <div class="container">
+                <h1>Roman Numeral Converter</h1>
+                <p class="subtitle">Введи число (1–3999), щоб отримати римський запис</p>
+        
+                <div class="input-box">
+                    <label for="numberInput">Число:</label>
+                    <input id="numberInput" type="number" placeholder="Наприклад: 1994" />
+                    <button id="convertBtn">Конвертувати</button>
+                </div>
+        
+                <div class="result-box">
+                    <h2>Результат:</h2>
+                    <div id="result">—</div>
+                </div>
+        </div>
+        <script>
+                function toRoman(num) {
+                    const map = [
+                        [1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
+                        [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'],
+                        [10, 'X'], [9, 'IX'], [8, 'VIII'], [7, 'VII'], [6, 'VI'],
+                        [5, 'V'], [4, 'IV'], [3, 'III'], [2, 'II'], [1, 'I']
+                        ];
+                    let result = '';
+                    for (const [value, symbol] of map) {
+                        while (num >= value) {
+                            result += symbol;
+                            num -= value;
+                        }
+                    }
+                    return result;
+                }
+        
+                const input = document.getElementById('numberInput');
+                const btn = document.getElementById('convertBtn');
+                const resultBox = document.getElementById('result');
+        
+                btn.addEventListener('click', () => {
+                    const value = Number(input.value);
+                    if (!Number.isInteger(value) || value <= 0 || value >= 4000) {
+                        resultBox.textContent = 'Введіть число від 1 до 3999';
+                        return;
+                    }
+                    resultBox.textContent = toRoman(value);
+                });
+            </script> 
+
+</body>
+    
+</html>
